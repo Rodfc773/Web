@@ -1,0 +1,58 @@
+<html>
+    <head><title>Projeto 2</title>
+        <meta charset="utf-8">
+    <script>
+        function verificar_triangulo()
+        {
+            var lado1 = prompt("digite um lado","")
+            var lado2 = prompt("digite um lado","")
+            var lado3 = prompt("digite um lado","")
+
+            if(lado1 >= lado3 + lado2)
+            {
+                alert("Nenhum triangulo pode ser formado")
+            }
+            else
+            {
+                if ((lado1 * lado1) = (lado2 * lado2) + (lado3 * lado3))
+                {
+                    alert("O triangulo é retângulo ,portanto possui 90 graus na junção de um dos dois lados")
+                }
+                else if((lado1 * lado1) > (lado2 * lado2) + (lado3 * lado3))
+                {
+                    if (lado1 > lado2 && lado2 > lado3)
+                    {
+                        alert("O triângulo é escaleno e obtusângulo")
+                    }
+                    else
+                    {
+                        alert("O triângulo é apenas obtusângulo")
+                    }
+                }
+                else
+                {
+                    if ((lado1 == lado2 && lado2 != lado3) || (lado2 == lado3 && lado3 != lado1) || lado1 == lado3 && lado3 != lado2)
+                    {
+                        alert("O triangulo é acutângulo e isóceles")
+                    }
+                    else if(lado1 == lado2 && lado3 == lado2)
+                    {
+                        alert("O triangulo é acutângulo e equilátero")
+                    }
+                    else
+                    {
+                        alert("O triangulo é apenas acuntângulo")
+                    }
+                }
+              
+            }  
+        }
+    </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="valor" value="digite o numero" onclick="verificar_triangulo()" >
+        </form>
+   
+    </body>
+</html>
